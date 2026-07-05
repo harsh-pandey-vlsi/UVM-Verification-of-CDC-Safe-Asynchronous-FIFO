@@ -28,12 +28,12 @@ The verification environment is architected to mirror the physical isolation of 
 ```text
 async-fifo-uvm/
 ├── rtl/                            # Design files (Verilog-2001 for synthesis)
-│   ├── async_fifo.v                # Top-level DUT
-│   ├── fifo_mem.v                  # Dual-port RAM
-│   ├── sync_r2w.v                  # Read-ptr to Write-domain synchronizer
-│   ├── sync_w2r.v                  # Write-ptr to Read-domain synchronizer
-│   ├── rptr_empty.v                # Read pointer and empty logic
-│   └── wptr_full.v                 # Write pointer and full logic
+│   ├── async_fifo.sv                # Top-level DUT
+│   ├── fifo_mem.sv                  # Dual-port RAM
+│   ├── sync_r2w.sv                  # Read-ptr to Write-domain synchronizer
+│   ├── sync_w2r.sv                  # Write-ptr to Read-domain synchronizer
+│   ├── rptr_empty.sv                # Read pointer and empty logic
+│   └── wptr_full.sv                 # Write pointer and full logic
 ├── tb/                             # UVM Testbench files (SystemVerilog)
 │   ├── interfaces/
 │   │   ├── wr_if.sv                # Write domain interface + SVA
